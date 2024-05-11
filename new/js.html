@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安全检查中...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f4f6;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .redirect-message {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .icon-spinner {
+            font-size: 2rem;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .footer-icon {
+            color: #28a745;
+            font-size: 0.9rem;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">安全检查中...</div>
+        <div class="message">
+            <p><i class="icon-spinner fas fa-spinner"></i></p>
+            <br><br>
+            ::IM_UNDER_ATTACK_BOX::
+            <p class="redirect-message">正在进行自动安全检查，请稍候...</p>
+        </div>
+        <div class="footer">
+            <i class="footer-icon fas fa-info-circle"></i> 此操作由 Cloudflare 提供安全保护<br>
+            <i class="footer-icon fas fa-shield-alt"></i> 当前网络安全稳定<br>
+            <i class="footer-icon fas fa-globe"></i> 你的IP: ::CLIENT_IP::<br>
+        </div>
+    </div>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.staticfile.net/font-awesome/6.5.1/css/all.min.css">
+</body>
+</html>
